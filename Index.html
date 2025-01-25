@@ -8,18 +8,27 @@
             <h1>Yuva Shankar Thokala</h1>
             <em>Slaying bugs since 2022</em>
             <nav>
-                <a>Education</a>
-                <a>skills</a>
-                <a>projects</a>
-                <a>contact me</a>
+                <!-- <a>Education</a> -->
+                <!-- <a>skills</a> -->
+                <a href="#about_me">About me</a>
+                <a href="#projects">projects</a>
+                <a href="#contact_me">Contact me!</a>
             </nav>
-            <section>
-                About me!
+            <section id="about_me">
+                <h2>Hi, I’m Yuva Shankar</h2>
+                <p>An Associate Technical Consultant specializing in Oracle Cloud Application Development. With a strong background in Java, Spring Boot, and Cloud Technologies, I enjoy building scalable and efficient solutions.
+                    <br>
+                    <br>
+                    Currently, I’m exploring front-end development and learning to integrate applications with Oracle Cloud. I’m passionate about solving problems, expanding my skill set, and collaborating on impactful projects.</p>
             </section>
-            <section>
+            <section id="projects">
+                <h2>My Projects</h2>
                 <div>
-                    <h2>Ecommerce Backend</h2>
-                    <h3>Tech stack</h3>
+                    <h3>Ecommerce Backend</h3>
+                    <p>
+                        This is an Ecommerce BackEnd project where I implemented a microservices structure for core functionalities like product management, inventory, order processing, and user authentication. I used Java and Spring Boot as the backbone, integrating Elasticsearch for fast, reliable search capabilities and Azure Service Bus to enable real-time updates across services. Automation is a big part of my approach, so I developed CI/CD pipelines with GitHub Actions and Azure DevOps to streamline deployment, which significantly reduced release times.
+                    </p>
+                    <h4>Tech stack</h4>
                     <ul>
                         <li>Java</li>
                         <li>Spring Boot</li>
@@ -27,11 +36,57 @@
                         <li>Kubernetes</li>
                         <li>Github Actions CI/CD</li>
                         <li>Mysql</li>
+                        <li>Elasticsearch</li>
                         <li>Rest Api</li>
                         <li>Spring Security, JWT</li> 
                     </ul>
-                    <img src="https://github.com/user-attachments/assets/8bb5e1c0-1b24-4213-80b9-3b4345944f41" width="412px" height="221px">
+                    <img src="https://github.com/user-attachments/assets/8bb5e1c0-1b24-4213-80b9-3b4345944f41" alt="microservices architecture" width="412px" height="221px">
                     <br>
+                    <div>
+                        <h4>API Gateway microservice</h4>
+                        <p>
+                            This is API Gateway for the Ecommerce BackEnd application, which is designed to manage all incoming traffic and route requests to the appropriate microservices. The API Gateway simplifies communication across services by acting as a single entry point, ensuring smooth and secure data flow within the system. It is configured to validate JWT tokens, apply role-based access, and enrich requests with user details, thus enhancing both security and scalability.
+                        </p>
+                        <p>
+                            Api Gateway repository <a href="https://github.com/yuva0606/microservices-api_gateway" target="_blank">link</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h4>User Service</h4>
+                        <p>
+                            The User Service is a core component of the Ecommerce BackEnd application, responsible for managing user-related operations such as registration, login, and CRUD operations for user profiles. It provides the authentication and authorization backbone for the application by issuing JWT tokens on successful login, which are used to secure access to other services through the API Gateway.
+                        </p>
+                        <p>
+                            User Service repository <a href="https://github.com/yuva0606/microservices-user_service" target="_blank">link</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Product Service</h4>
+                        <p>
+                            The Product Service is a critical component of the Ecommerce BackEnd application, responsible for handling product-related data and operations. This service manages the addition, retrieval, updating, and deletion of product information and integrates with the Inventory Service to maintain accurate stock levels.
+                        </p>
+                        <p>
+                            Product Service repository <a href="https://github.com/yuva0606/microservices-product_service" target="_blank">link</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Order Service</h4>
+                        <p>
+                            The Order Service is a critical part of the Ecommerce BackEnd, responsible for managing customer orders. It facilitates order creation and retrieval while ensuring seamless integration with the Product and Inventory Services to maintain accurate stock levels.
+                        </p>
+                        <p>
+                            Order Service repository <a href="https://github.com/yuva0606/microservices-order_service" target="_blank">link</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Inventory Service</h4>
+                        <p>
+                            The Inventory Service is a crucial part of the Ecommerce BackEnd application, responsible for managing stock levels of products. This service allows for adding, retrieving, and reducing stock quantities, ensuring that stock levels are consistently maintained and available for other services.
+                        </p>
+                        <p>
+                            Inventory Service repository <a href="https://github.com/yuva0606/microservices-Inventory_service" target="_blank">link</a>
+                        </p>
+                    </div>
                     <a>Api-gateway</a>
                     <a>user-service</a>
                     <a>product-service</a>
@@ -39,8 +94,11 @@
                     <a>inventory-service</a>
                 </div>
                 <div>
-                    <h2>Task Management System</h2>
-                    <h3>Tech stack</h3>
+                    <h3>Task Management System</h3>
+                    <p>
+                        The Task Management System is a backend application built using Spring Boot, MySQL, Spring Security, and JWT for secure authentication and authorization. It allows users to register, log in, and manage their tasks through CRUD operations. Each user can create, view, update, and delete their tasks while ensuring that only authorized users can access their own tasks. The project implements role-based access control, where admins have full control over all user tasks. It efficiently handles user sessions using JWT tokens and follows best practices for secure and scalable backend development.
+                    </p>
+                    <h4>Tech stack</h4>
                     <ul>
                         <li>Java</li>
                         <li>Spring Boot</li>
@@ -49,36 +107,37 @@
                         <li>Rest Api</li>
                         <li>Spring Security, JWT</li> 
                     </ul>
-                    <a>project link</a>
+                    <a href="https://github.com/yuva0606/Task-Management-System" target="_blank">Task Management System project link</a>
                 </div>
             </section>
-            <section>
+            <section id="contact_me">
+                <h2>Contact Me</h2>
                 <h4>Fill out this to Contact me :)</h4>
                 <form>
                     <label for="name">Name</label>
                     <br>
-                    <input type="text" id="name" placeholder="enter your name">
+                    <input type="text" id="name" placeholder="enter your name" required>
                     <br>
                     <br>
                     <label for="email">Email</label>
                     <br>
-                    <input type="email" id="email" placeholder="your email">
+                    <input type="email" id="email" placeholder="your email" required>
                     <br>
                     <br>
-                    <label for="monile">Mobile Number</label>
+                    <label for="mobile">Mobile Number</label>
                     <br>
                     <input type="number" id="mobile" placeholder="your number here">
                     <br>
                     <br>
-                    <button type="submit">Let's go!</button>
+                    <button type="submit">submit</button>
                 </form> 
             </section>
             <footer>
-                <em>copyright thing</em>
+                <em>&copy; Yuva Shankar, All Rights reserved</em>
                 <br>
-                <a>Youtube</a>
-                <a>LinkedIn</a>
-                <a>Github</a>
+                <a href="https://www.linkedin.com/in/yuva0606" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yuva0606" target="_blank">Github</a>
+                <a href="https://www.youtube.com/@raiden0606" target="_blank">Youtube</a>
             </footer>
         </header>
 
