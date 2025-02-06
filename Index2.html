@@ -12,7 +12,7 @@
     <header>
         <div class ="logo">
             <a href="#">
-                <h1>Yuva Shankar</h1>
+                <h1>Raiden</h1>
                 <p><em>Slaying bugs since 2022</em></p>
             </a>
         </div>
@@ -28,13 +28,25 @@
     
     <main>
         <section id="about_me">
-            <h2>About Me</h2>
-            <p>
+            <!-- <h2>About Me</h2> -->
+             <div class="container">
+                <div class="row">
+                    <div class="home-text">
+                        <h1>Yuva Shankar</h1>
+                        <p class="animate-text">I'm a <br>
+                            <span>Java Developer</span>
+                            <span>Gamer</span>
+                            <span>Technical Consultant</span>
+                        </p>
+                    </div>
+                </div>
+             </div>
+            <!-- <p>
                 Hi, I’m Yuva Shankar, an Associate Technical Consultant specializing in Oracle Cloud Application Development. 
                 I have a strong background in Java, Spring Boot, and Cloud Technologies, with a passion for building scalable and efficient solutions.
                 Currently, I’m diving into front-end development and exploring how to integrate applications with Oracle Cloud.
                 I thrive on solving problems, expanding my skill set, and collaborating on impactful projects.
-            </p>
+            </p> -->
         </section>
         <section id="projects">
             <h2>My Projects</h2>
@@ -165,5 +177,38 @@
             </ul>
         </nav>
     </footer>
+
+    <script>
+        const txts=document.querySelector(".animate-text").children,
+              txtsLen=txts.length;
+          let index=0;
+         const textInTimer=3000,
+               textOutTimer=2800;
+
+        function animateText() {
+           for(let i=0; i<txtsLen; i++){
+             txts[i].classList.remove("text-in","text-out");  
+           }
+           txts[index].classList.add("text-in");
+
+           setTimeout(function(){
+               txts[index].classList.add("text-out");              
+           },textOutTimer)
+
+           setTimeout(function(){
+
+             if(index == txtsLen-1){
+                 index=0;
+               }
+              else{
+                  index++;
+                }
+               animateText();
+           },textInTimer); 
+        }
+        
+        window.onload=animateText;
+  
+</script>
 </body>
 </html>
