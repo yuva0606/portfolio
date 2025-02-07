@@ -1,32 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yuva's Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="portfolio.js"></script>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul class="navbar">
-                <li class="logo"><a href="#">Yuva Shankar</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-                <li id="hide"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+      <nav class="navbar">
+        <div class="wide-nav">
+          <div class="nav-logo">
+            <p>Yuva Shankar</p>
+          </div>
+          <div class="nav-list nav-hide">
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Skills</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="">Contact</a></li>
             </ul>
-            <ul class="sidebar">
-                <li><svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="12px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-                <li class="logo"><a href="#">Yuva Shankar</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+          </div>
+          <div class="menu-icon" onclick="toggleSideNav()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="18px"
+              viewBox="0 -960 960 960"
+              width="18px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="side-nav">
+          <div class="nav-list">
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Skills</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="">Contact</a></li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
-</body>
+
+    <main>
+      <section id="hero">
+        <div class="hero-block">
+          <div id="hero-image">
+            <img src="guys working.png" />
+          </div>
+          <div>
+            <h1>Hello!</h1>
+            <h1>I'm Yuva</h1>
+            <h1>I'm a Java Backend Developer</h1>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section-container">
+          <h1>About Me</h1>
+          <p>
+            I'm currently exploring Front-End Technologies & Frameworks, and
+            Oracle Cloud Services. I developed several Backend API's using JAVA
+            - Spring Boot
+          </p>
+      </section>
+      <section id="skills" class="section-container">
+        <h1>Skills</h1>
+        <div id="skills-container">
+            <span class="skill">Java</span>
+            <span class="skill">Spring Boot</span>
+            <span class="skill">Kubernetes</span>
+            <span class="skill">Docker</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Git</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Java Script</span>
+        </div>
+      </section>
+      <section id="projects" class="section-container">
+        <h1>Projects</h1>
+        <div id="project-container">
+          <div id="project-1">
+            <img
+              src="https://github.com/user-attachments/assets/8bb5e1c0-1b24-4213-80b9-3b4345944f41"
+              alt="Microservices Architecture Diagram"
+            />
+            <div>
+              <p class="project-name">Ecommerce Backend</p>
+              <p class="project-desc">
+                This is an Ecommerce BackEnd project where I implemented a
+                microservices structure for core functionalities like product
+                management, inventory, order processing, and user
+                authentication.
+              </p>
+              <a>View Project</a>
+            </div>
+          </div>
+          <div id="project-2">
+            <img
+              src="https://projectsly.com/images/task-management-system-screenshot-1.png?v=1691124479409199525"
+              alt="Task Management images"
+            />
+            <div>
+              <p class="project-name">Task Management System</p>
+              <p class="project-desc">
+                A secure backend application that allows users to register, log
+                in, and manage tasks. Features include JWT-based authentication,
+                role-based access control, and secure CRUD operations.
+              </p>
+              <a>View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const sideNav = document.querySelector(".side-nav");
+      function toggleSideNav() {
+        if (sideNav.style.display == "none") {
+          sideNav.style.display = "flex";
+        } else {
+          sideNav.style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>
