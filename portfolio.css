@@ -183,7 +183,7 @@ body{
 .skill {
     background-color: white;
     color: black;
-    width: 150px;
+    max-width: 150px;
     padding: 12px 18px;
     display: flex;
     flex-direction: column;
@@ -194,6 +194,11 @@ body{
     font-weight: bold;
     font-size: 16px;
     transition: transform 0.2s ease, box-shadow 0.2s ease; */
+}
+
+.skill img{
+    max-width: 150px;
+    object-fit: contain;
 }
 
 .skill:hover {
@@ -229,12 +234,13 @@ body{
 }
 
 #project-1 img{
-    width: 60%;
+    max-width: 60%;
     object-fit: contain;
 }
 
-#project-2{
-
+#project-2 img{
+    max-width: 60%;
+    object-fit: contain;
 }
 
 
