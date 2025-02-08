@@ -174,25 +174,30 @@ body{
 
 #skills-container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 65px;
-    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;align-content: space-evenly;
 }
 
 .skill {
-    background-color: #0A84FF; /* Slightly lighter dark for contrast */
-    color: white; /* Bright cyan for visibility */
+    background-color: white;
+    color: black;
+    width: 150px;
     padding: 12px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     border-radius: 8px;
-    text-align: center;
+    /*text-align: center;
     font-weight: bold;
     font-size: 16px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; */
 }
 
 .skill:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 188, 212, 0.7); /* Cyan glow effect */
 }
 
