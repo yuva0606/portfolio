@@ -1,0 +1,61 @@
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 20px 50px;
+    }
+    .hero-block {
+        flex-direction: column;
+        text-align: center;
+    }
+    #hero-image {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+    }
+    .side-nav {
+        display: flex;
+        flex-direction: column;
+        background: #1E1E1E;
+        position: absolute;
+        width: 100%;
+        padding: 10px;
+        top: 60px;
+    }
+    .nav-list ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    #skills-container, #project-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-block {
+        width: 90%;
+    }
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .hero-block h1 {
+        font-size: 20px;
+    }
+    .contact-form input {
+        width: 90%;
+    }
+}
