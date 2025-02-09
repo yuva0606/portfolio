@@ -12,14 +12,14 @@
       <nav class="navbar">
         <div class="wide-nav">
           <div class="nav-logo">
-            <p>Yuva Shankar</p>
+            <p><a href="#">Yuva Shankar</a></p>
           </div>
           <div class="nav-list nav-hide">
             <ul>
-              <li><a href="">About</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="#about-div">About</a></li>
+              <li><a href="#skills-div">Skills</a></li>
+              <li><a href="#projects-div">Projects</a></li>
+              <li><a href="#contact-div">Contact</a></li>
             </ul>
           </div>
           <div class="menu-icon" onclick="toggleSideNav()">
@@ -53,7 +53,7 @@
       <section id="hero">
         <div class="hero-block">
           <div id="hero-image">
-            <img src="guys working.png" />
+            <img src="images/guys working.png" />
           </div>
           <div>
             <h1>Hello!</h1>
@@ -62,6 +62,7 @@
           </div>
         </div>
       </section>
+      <div id="about-div" class="nav-section"></div>
       <section id="about" class="section-container">
           <h1>About Me</h1>
           <p>
@@ -70,6 +71,7 @@
             - Spring Boot
           </p>
       </section>
+      <div id="skills-div" class="nav-section"></div>
       <section id="skills" class="section-container">
         <h1>Skills</h1>
         <div id="skills-container">
@@ -119,43 +121,83 @@
             <span class="skill">Java Script</span> -->
         </div>
       </section>
+      <div id="projects-div" class="nav-section"></div>
       <section id="projects" class="section-container">
         <h1>Projects</h1>
         <div id="project-container">
-          <div id="project-1">
-            <img
-              src="https://github.com/user-attachments/assets/8bb5e1c0-1b24-4213-80b9-3b4345944f41"
-              alt="Microservices Architecture Diagram"
-            />
-            <div>
-              <p class="project-name">Ecommerce Backend</p>
+          <div class="project-block">
+            <div class="project-image">
+                <img
+                  src="https://github.com/user-attachments/assets/8bb5e1c0-1b24-4213-80b9-3b4345944f41"
+                  alt="Microservices Architecture Diagram"
+                />
+            </div>
+            <div class="project-details">
+              <h1 class="project-name">Ecommerce Backend</h1>
               <p class="project-desc">
                 This is an Ecommerce BackEnd project where I implemented a
                 microservices structure for core functionalities like product
                 management, inventory, order processing, and user
                 authentication.
               </p>
-              <a>View Project</a>
+              <a href="">View Project</a>
             </div>
           </div>
-          <div id="project-2">
-            <img
-              src="https://projectsly.com/images/task-management-system-screenshot-1.png?v=1691124479409199525"
-              alt="Task Management images"
-            />
-            <div>
-              <p class="project-name">Task Management System</p>
+          <div class="project-block">
+            <div class="project-image">
+                <img
+                  src="https://projectsly.com/images/task-management-system-screenshot-1.png?v=1691124479409199525"
+                  alt="Task Management images"
+                />
+            </div>
+            <div class="project-details">
+              <h1 class="project-name">Task Management System</h1>
               <p class="project-desc">
                 A secure backend application that allows users to register, log
                 in, and manage tasks. Features include JWT-based authentication,
                 role-based access control, and secure CRUD operations.
               </p>
-              <a>View Project</a>
+              <a href="">View Project</a>
             </div>
           </div>
         </div>
       </section>
+      <div id="contact-div" class="nav-section"></div>
+      <section id="contact" class="section-container">
+        <h1>Contact Me</h1>
+        <div class="contact-form">
+            <form>
+                <div class="form-ele">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-ele">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-ele">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your number">
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+      </section>
     </main>
+    <hr>
+    <footer id="footer">
+        <p><em>&copy; 2025 Yuva Shankar. All Rights Reserved.</em></p>
+        <div class="social-media">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/yuva0606" target="_blank"><img src="images/LinkedIn.png"></a></li>
+                <li><a href="https://github.com/yuva0606" target="_blank"><img src="images/github_3291695.png" style="background-color: white;border-radius: 30px;"></a></li>
+                <li><a href="https://www.youtube.com/@raiden0606" target="_blank"><img src="images/youtube_5968852.png"></a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script>
       const sideNav = document.querySelector(".side-nav");

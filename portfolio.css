@@ -41,15 +41,15 @@ body{
     gap: 40px;
 }
 
-.nav-list a{
+.navbar a{
     text-decoration: none;
-    color: white;
+    color: #0A84FF;
     font-size: 20px;
     transition: color 0.3s ease-in-out;
 }
 
 .nav-list a:hover{
-    color: #0A84FF;
+    color: white;
 }
 
 .menu-icon{
@@ -145,7 +145,7 @@ body{
 }
 
 .section-container{
-    padding: 100px 200px;
+    padding: 100px 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -154,6 +154,9 @@ body{
     gap: 50px;
 }
 
+.nav-section{
+    padding-top: 50px;
+}
 .about-container{
     display: flex;
     flex-direction: column;
@@ -173,11 +176,12 @@ body{
 } */
 
 #skills-container {
-    width: 100%;
+    width: 70vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px;align-content: space-evenly;
+    gap: 50px;
+    align-content: space-between;
 }
 
 .skill {
@@ -188,16 +192,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    border-radius: 8px;
-    /*text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease; */
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .skill img{
-    max-width: 150px;
+    max-width: 100px;
     object-fit: contain;
 }
 
@@ -212,9 +214,8 @@ body{
     border-radius: 15px;
     color: white;
 } */
-
 #project-container{
-    margin: 30px 0px;
+    width: 100%;
     color: black; 
     text-align: center;
     display: flex;
@@ -224,23 +225,168 @@ body{
     gap: 50px;
 }
 
-#project-1, #project-2{
+.project-block{
+    width: 70vw;
     background-color: white;
     border-radius: 15px;
     display: flex;
-    padding: 30px 30px;
-    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 15px 0px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.project-image{
+    max-width: 100%;
+}
+
+.project-image img{ 
+    width: 90%;
+    object-fit:contain ;
+}
+
+.project-details{
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-desc{
+    text-align: start;
+}
+
+.contact-form{
+    width: 60vw;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
 }
 
-#project-1 img{
-    max-width: 60%;
-    object-fit: contain;
+.contact-form form input{
+    background-color: white;
+    padding: 6px;
+    width: 40vw;
+    border: none;
+    border-bottom: 2px solid black;
+    /* border-radius: 15px; */
 }
 
-#project-2 img{
-    max-width: 60%;
-    object-fit: contain;
+.contact-form label{
+    font-size: 15px;
+}
+
+.contact-form .form-ele{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form button{
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: #0A84FF;
+    color: white;
+}
+
+#footer{
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-media ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-media img{
+    width: 50px;
+}
+
+.section-container h1{
+    color: #0A84FF;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 20px 50px;
+    }
+    .hero-block {
+        flex-direction: column;
+        text-align: center;
+    }
+    #hero-image {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+    }
+    .side-nav {
+        display: flex;
+        flex-direction: column;
+        background: #1E1E1E;
+        position: absolute;
+        width: 100%;
+        padding: 10px;
+        top: 60px;
+    }
+    .nav-list ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    #skills-container, #project-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-block {
+        width: 90%;
+    }
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .hero-block h1 {
+        font-size: 20px;
+    }
+    .contact-form input {
+        width: 90%;
+    }
 }
 
 
