@@ -386,9 +386,7 @@ body{
     .section-container{
         padding: 50px 20px;
     }
-
 }
-
 
 @media (max-width: 480px) {
 
@@ -403,6 +401,10 @@ body{
 
     .skill{
         max-width: 120px;
+    }
+
+    .contact-form{
+        width: 70vw;
     }
 }
 
