@@ -89,7 +89,22 @@ body {
 
 #hero-desc {
     font-family: "Montserrat", serif;
-    font-size: 30px;
+}
+
+#hero-hello{
+    font-size: 4em;
+}
+
+#hero-name{
+    font-size: 6em;
+}
+
+#hero-name span{
+    color: #0a84ff;
+}
+
+#hero-role{
+    font-size: 2.5em;
 }
 
 .section-container {
