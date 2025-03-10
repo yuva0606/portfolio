@@ -246,7 +246,7 @@ body {
   align-items: center;
 }
 
-.contact-form form input {
+.contact-form form input {  
   background-color: white;
   padding: 6px;
   width: 40vw;
