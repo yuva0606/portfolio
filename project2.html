@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Management System Project</title>
+    <title>Ecommerce Backend Project</title>
+    <link rel="stylesheet" href="projects.css" />
   </head>
   <body>
     <header>
@@ -14,10 +15,10 @@
           </div>
           <div class="nav-list">
             <ul>
-              <li><a href="#about-div">About</a></li>
-              <li><a href="#skills-div">Skills</a></li>
-              <li><a href="#projects-div">Projects</a></li>
-              <li><a href="#contact-div">Contact</a></li>
+              <li><a href="portfolio.html#about-div">About</a></li>
+              <li><a href="portfolio.html#skills-div">Skills</a></li>
+              <li><a href="portfolio.html#projects-div">Projects</a></li>
+              <li><a href="portfolio.html#contact-div">Contact</a></li>
             </ul>
           </div>
           <div class="menu-icon" onclick="toggleSideNav()">
@@ -37,54 +38,92 @@
         <div class="side-nav">
           <div class="side-nav-list">
             <ul>
-              <li><a href="#about-div">About</a></li>
-              <li><a href="#skills-div">Skills</a></li>
-              <li><a href="#projects-div">Projects</a></li>
-              <li><a href="#contact-div">Contact</a></li>
+              <li><a href="portfolio.html#about-div">About</a></li>
+              <li><a href="portfolio.html#skills-div">Skills</a></li>
+              <li><a href="portfolio.html#projects-div">Projects</a></li>
+              <li><a href="portfolio.html#contact-div">Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
-    <div>
-      <h3>Task Management System</h3>
-      <p>
-        The Task Management System is a backend application built using Spring
-        Boot, MySQL, Spring Security, and JWT for secure authentication and
-        authorization. It allows users to register, log in, and manage their
-        tasks through CRUD operations. Each user can create, view, update, and
-        delete their tasks while ensuring that only authorized users can access
-        their own tasks. The project implements role-based access control, where
-        admins have full control over all user tasks. It efficiently handles
-        user sessions using JWT tokens and follows best practices for secure and
-        scalable backend development.
-      </p>
-      <h4>Tech stack</h4>
-      <ul>
-        <li>Java</li>
-        <li>Spring Boot</li>
-        <li>Github Actions CI/CD</li>
-        <li>Mysql</li>
-        <li>Rest Api</li>
-        <li>Spring Security, JWT</li>
-      </ul>
-      <a
-        href="https://github.com/yuva0606/Task-Management-System"
-        target="_blank"
-        >Task Management System project link</a
-      >
-    </div>
-
-    <footer id="footer">
-        <p><em>&copy; 2025 Yuva Shankar. All Rights Reserved.</em></p>
-        <div class="social-media">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/yuva0606" target="_blank"><img src="images/LinkedIn.png"></a></li>
-                <li><a href="https://github.com/yuva0606" target="_blank"><img src="images/github_3291695.png" style="background-color: white;border-radius: 30px;"></a></li>
-                <li><a href="https://www.youtube.com/@raiden0606" target="_blank"><img src="images/youtube_5968852.png"></a></li>
-            </ul>
+    <main>
+      <div class="project">
+        <div>
+          <h1>Task Management System</h1>
         </div>
+        <div>
+          <img
+            src="https://projectsly.com/images/task-management-system-screenshot-1.png?v=1691124479409199525"
+            alt="Task Management images"
+          />
+        </div>
+        <div>
+          <p>
+            The Task Management System is a backend application built using
+            Spring Boot, MySQL, Spring Security, and JWT for secure
+            authentication and authorization. It allows users to register, log
+            in, and manage their tasks through CRUD operations. Each user can
+            create, view, update, and delete their tasks while ensuring that
+            only authorized users can access their own tasks. The project
+            implements role-based access control, where admins have full control
+            over all user tasks. It efficiently handles user sessions using JWT
+            tokens and follows best practices for secure and scalable backend
+            development.
+          </p>
+        </div>
+        <div>
+          <h2>Tech stack</h2>
+          <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Github Actions CI/CD</li>
+            <li>Mysql</li>
+            <li>Rest Api</li>
+            <li>Spring Security, JWT</li>
+          </ul>
+        </div>
+        
+        <a
+          href="https://github.com/yuva0606/Task-Management-System"
+          target="_blank"
+          >Task Management System project link</a
+        >
+      </div>
+    </main>
+    <footer id="footer">
+      <p><em>&copy; 2025 Yuva Shankar. All Rights Reserved.</em></p>
+      <div class="social-media">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/yuva0606" target="_blank"
+              ><img src="images/LinkedIn.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/yuva0606" target="_blank"
+              ><img
+                src="images/github_3291695.png"
+                style="background-color: white; border-radius: 30px"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@raiden0606" target="_blank"
+              ><img src="images/youtube_5968852.png"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
+    <script>
+      const sideNav = document.querySelector(".side-nav");
+      function toggleSideNav() {
+        if (sideNav.style.display == "none") {
+          sideNav.style.display = "flex";
+        } else {
+          sideNav.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

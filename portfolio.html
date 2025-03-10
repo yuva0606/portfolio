@@ -48,7 +48,7 @@
         </div>
       </nav>
     </header>
-
+    <!-- Dark mode toggle is not needed as the portfolio is already designed with a dark theme. -->
     <main>
       <section id="hero">
         <div class="hero-block">
@@ -65,11 +65,11 @@
       <div id="about-div" class="nav-section"></div>
       <section id="about" class="section-container">
           <h1>About Me</h1>
-          <p>
-            I'm currently exploring Front-End Technologies & Frameworks, and
-            Oracle Cloud Services. I developed several Backend API's using JAVA
-            - Spring Boot. I am also an experienced Graphic Designer.
-          </p>
+          <div id="about-details">
+            <p>
+              I'm a passionate developer exploring Front-End Technologies, Frameworks, and Oracle Cloud Services. I have a strong background in Back-End development, having built multiple APIs using Java and Spring Boot. Currently, I'm actively participating in the GeeksforGeeks 160-Day Challenge, with 113 days of coding completed so far.
+            </p>
+          </div>
       </section>
       <div id="skills-div" class="nav-section"></div>
       <section id="skills" class="section-container">
@@ -136,7 +136,7 @@
                 management, inventory, order processing, and user
                 authentication.
               </p>
-              <a href="">View Project</a>
+              <a href="project1.html">View Project</a>
             </div>
           </div>
           <div class="project-block">
@@ -153,7 +153,7 @@
                 in, and manage tasks. Features include JWT-based authentication,
                 role-based access control, and secure CRUD operations.
               </p>
-              <a href="">View Project</a>
+              <a href="project2.html">View Project</a>
             </div>
           </div>
         </div>
@@ -162,25 +162,28 @@
       <section id="contact" class="section-container">
         <h1>Contact Me</h1>
         <div class="contact-form">
-            <form>
-                <div class="form-ele">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-
-                <div class="form-ele">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-
-                <div class="form-ele">
-                    <label for="message">Message:</label>
-                    <input type="text" id="message" name="message" placeholder="Enter your message">
-                </div>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+          <form>
+              <div class="error-message"></div>
+      
+              <div class="form-ele">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name">
+              </div>
+      
+              <div class="form-ele">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email">
+              </div>
+      
+              <div class="form-ele">
+                  <label for="message">Message:</label>
+                  <input type="text" id="message" name="message" placeholder="Enter your message">
+              </div>
+      
+              <button type="submit">Submit</button>
+          </form>
+      </div>
+      
       </section>
     </main>
     <hr>
@@ -194,16 +197,15 @@
             </ul>
         </div>
     </footer>
-
     <script>
       const sideNav = document.querySelector(".side-nav");
-      function toggleSideNav() {
-        if (sideNav.style.display == "none") {
-          sideNav.style.display = "flex";
-        } else {
-          sideNav.style.display = "none";
-        }
-      }
+function toggleSideNav() {
+  if (sideNav.style.display == "none") {
+    sideNav.style.display = "flex";
+  } else {
+    sideNav.style.display = "none";
+  }
+}
     </script>
   </body>
 </html>
